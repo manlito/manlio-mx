@@ -52,6 +52,9 @@
 .process > div:first-child {
   flex-grow: 1;
 }
+.dropzone {
+  background-color: #eeeeee;
+}
 
 @media (max-width: 600px) {
   .browse {
@@ -68,5 +71,17 @@
   }
   .form > div {
     padding-bottom: 1rem;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .browse, .process {
+      background-color: #444444;
+    }  
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .dropzone, .process {
+    background-color: #444444;
   }
 }

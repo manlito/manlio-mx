@@ -82,7 +82,7 @@ export default function Home() {
             </div>
 
             <div className={styles.hero} >
-              <img src="deployment.svg" style={{ width: 100 }} />
+              <img src="deployment.svg" />
               <p>Code I have written is running in production in the 5 continents</p>
             </div>
 

@@ -20,6 +20,9 @@
   flex-grow: 1;
   font-size: 2.5rem;
 }
+.menu a {
+  color: inherit !important;
+}
 
 .name {
   flex-grow: 1;
@@ -36,7 +39,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0.6;
 } 
 .footer .footer-sep {
   display: auto;
@@ -51,3 +54,8 @@
   }
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .main a {
+    color: #7ac3e6;
+  }
+}

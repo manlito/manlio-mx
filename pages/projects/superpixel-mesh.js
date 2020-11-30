@@ -172,6 +172,7 @@ const SuperpixelMesh = () => {
             <h3> Pick an image</h3>
             <div className={styles.browse} >
               <DropZone
+                className={styles.dropzone}
                 style={{ display: 'flex', flexGrow: 1 }}
                 onDropFile={handleDropFile}
               />

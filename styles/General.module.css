@@ -27,10 +27,12 @@
   max-width: 100%;
   align-items: center;
 }
+
 .image img {
   max-width: 90%;
   border-radius: 8px;
 }
+
 .image p {
   text-align: center;
   opacity: 60%;
@@ -40,5 +42,15 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .warning {
+    color: black !important;
+    border-radius: 8px;
+  }
+  .warning a {
+    color: #2463c2 !important;
   }
 }

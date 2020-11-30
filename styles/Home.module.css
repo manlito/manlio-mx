@@ -65,6 +65,10 @@
   margin: auto;
 }
 
+.hero img {
+  width: 100px;
+}
+
 .showcase {
   border-style: solid;
   border-width: 1px;
@@ -79,8 +83,8 @@
   border-top-left-radius: 7px;
   border-bottom-right-radius: 8px;
   padding: 1rem;
-  background-color: #eeeeee !important;
-  color: black !important;
+  background-color: #eeeeee;
+  color: black;
 }
 
 .showcase:hover,
@@ -96,5 +100,18 @@
   }
   .skill > div {
     width: 100%;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .value > p {
+    background-color: #444444;
+  }
+  .showcase span {
+    background-color: #444444;
+    color: white;
+  }
+  .hero img {
+    filter: invert(80%) 
   }
 }
