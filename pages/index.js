@@ -33,7 +33,7 @@ export default function Home() {
                 backgroundPosition: "right",
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
-              }} div
+              }}
               href="/projects/superpixel-mesh">
               <span><b>Superpixel Mesh</b> / Aligning a mesh to any image</span>
             </a>

@@ -13,7 +13,7 @@ module.exports = {
       }
     )
     config.module.rules.push({
-      test: /\.worker\.(js|ts)$/,
+      test: /\.worker\.js$/,
       loader: 'worker-loader',
       options: {
         filename: 'static/[hash].worker.js',

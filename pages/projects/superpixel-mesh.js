@@ -1,14 +1,14 @@
 import Head from 'next/head'
-import generalStyles from '../../../styles/General.module.css'
-import styles from '../../../styles/SuperpixelMesh.module.css'
+import generalStyles from '../../styles/General.module.css'
+import styles from '../../styles/SuperpixelMesh.module.css'
 import { useEffect, useState } from 'react'
-import { Layout, Container, Main } from '../../../components/Layout'
-import Header from '../../../components/Header'
-import Menu from '../../../components/Menu'
-import Footer from '../../../components/Footer'
-import DropZone from '../../../components/DropZone'
-import MeshCanvas from './MeshCanvas';
-import SuperpixelWorker from './SuperpixelMesh.worker.js';
+import { Layout, Container, Main } from '../../components/Layout'
+import Header from '../../components/Header'
+import Menu from '../../components/Menu'
+import Footer from '../../components/Footer'
+import DropZone from '../../components/DropZone'
+import MeshCanvas from '../../components/projects/superpixel-mesh/MeshCanvas';
+import SuperpixelWorker from '../../components/projects/superpixel-mesh/SuperpixelMesh.worker.js';
 
 const SuperpixelMesh = () => {
   const [worker, setWorker] = useState(undefined);
