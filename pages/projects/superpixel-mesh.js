@@ -117,7 +117,7 @@ const SuperpixelMesh = () => {
 
           <section>
             <h2>What's the problem</h2>
-            <p>I needed a segmentation of the image with some weird contraint: Each segment has to be a quadrilateral with sort of the same size.</p>
+            <p>I needed a segmentation of the image with some weird contraint: each segment has to be a quadrilateral with sort of the same size.</p>
 
             <div className={generalStyles.image} >
               <img src="/superpixel-mesh-cover.jpg" />

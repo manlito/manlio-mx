@@ -74,8 +74,8 @@ export default function Home() {
 
               <div className={styles.value}>
                 <p>
-                  Experience with the complex.
-                &nbsp;<small>Comfortable architecting and implementing mid term projects. I have lead CV teams of up to 8 people.</small>
+                  Complexity not a problem.
+                &nbsp;<small>I have architected and implemented year long projects smoothly. Comfortable coaching.</small>
                 </p>
               </div>
 
