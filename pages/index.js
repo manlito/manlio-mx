@@ -1,65 +1,149 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import generalStyles from '../styles/General.module.css'
+import { Layout, Container, Main } from '../components/Layout'
+import Header from '../components/Header'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout >
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Header />
+      <Container>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <Main>
+          <Menu />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <h1>Applied computer vision.</h1>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <p className={generalStyles.warning}>
+            [12/2020] Available for contracting or full time. Drop me a message at <a href="mailto:manlito@gmail.com">manlito@gmail.com</a>.
+          </p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <section>
+            <h2>
+              Showcase demo
+            </h2>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+            <a className={styles.showcase}
+              style={{
+                height: 200,
+                backgroundImage: "url('/superpixel-mesh-cover.jpg')",
+                backgroundPosition: "right",
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+              }} div
+              href="/projects/superpixel-mesh">
+              <span><b>Superpixel Mesh</b> / Aligning a mesh to any image</span>
+            </a>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+            <div>
+            </div>
+          </section>
+
+          <section>
+            <h2>About me</h2>
+
+            <p>Computer vision engineer working on 3D reconstruction with some fullstack dev skills. I have worked mostly for US startups solving challenges for which computer vision has a solution.</p>
+
+            <h3>My value proposition:</h3>
+
+            <div className={styles.values}>
+
+              <div className={styles.value}>
+                <p>
+                  Production grade code.
+                &nbsp;<small>You don't need to refactor everything upon completion. Research, code and productionize as it makes sense.</small>
+                </p>
+              </div>
+
+              <div className={styles.value}>
+                <p>
+                  Computer vision + full stack.
+                &nbsp;<small>If your project has the right time-to-market but some budget constraints at the same time, I can take on fullstack duties. </small>
+                </p>
+              </div>
+
+              <div className={styles.value}>
+                <p>
+                  Culture and communication.
+                &nbsp;<small>I have worked for 6 years for US based companies. My main timezone is CST, yet it is flexible.</small>
+                </p>
+              </div>
+
+              <div className={styles.value}>
+                <p>
+                  Experience with the complex.
+                &nbsp;<small>Comfortable architecting and implementing mid term projects. I have lead CV teams of up to 8 people.</small>
+                </p>
+              </div>
+
+            </div>
+
+            <div className={styles.hero} >
+              <img src="deployment.svg" style={{ width: 100 }} />
+              <p>Code I have written is running in production in the 5 continents</p>
+            </div>
+
+            <h3>Experience</h3>
+
+            <div className={styles.skills}>
+
+              <div className={styles.skill}>
+                <div>
+                  <h4>Computer vision</h4>
+                  <ul>
+                    <li>Structure from motion</li>
+                    <li>SLAM using GPS, IMU, LiDAR and vision</li>
+                    <li>Multiview stereo</li>
+                    <li>Photogrammetry</li>
+                    <li>Surface reconstruction</li>
+                    <li>Pointcloud processing</li>
+                    <li>Calibration</li>
+                    <li>Spatial reference transforms (GIS)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles.skill}>
+                <div>
+                  <h4>Computer vision libraries</h4>
+                  <ul>
+                    <li>OpenCV, PointcloudLibray (PCL)</li>
+                    <li><span className="tag is-small">SfM</span> VLFeat, FLANN, OpenMVG</li>
+                    <li><span className="tag is-small">Multiview stereo</span> PMVS, SMVS</li>
+                    <li><span className="tag is-small">Computational geometry</span> PoissonRecon, CGAL</li>
+                    <li><span className="tag is-small">Math</span> Eigen, ceres-solver</li>
+                    <li><span className="tag is-small">Visualization</span> VTK</li>
+                    <li><span className="tag is-small">Parallelization</span> OpenMP, CUDA (beginner)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles.skill}>
+                <div>
+                  <h4>Software engineering</h4>
+                  <ul>
+                    <li><span className="tag is-small">Languages</span> C++, Javascript, Python, Bash, C#, PHP</li>
+                    <li><span className="tag is-small">Cloud</span> (AWS): EC2, Lightsail, Elastic Beanstalk, S3, Lambda, API Gateway, Cloudfront, Route53. (GCP): AppEngine</li>
+                    <li><span className="tag is-small">Databases</span> MySQL, MS-SQL Server, MongoDB</li>
+                    <li><span className="tag is-small">Tools</span> Docker, CMake, Make, GTest, GPerfTools, Protobuf, emscripten</li>
+                    <li><span className="tag is-small">Frameworks</span> Qt, Node.JS, React, tensorflow (beginner)</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+        </Main>
+
+        <Footer />
+
+      </Container>
+
+    </Layout>
   )
 }

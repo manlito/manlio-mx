@@ -1,0 +1,44 @@
+
+.warning {
+  padding: 1rem;
+  margin: 0.25rem 0;
+  background-color: #f8e178;
+  border-radius: 8px;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.math {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+}
+.image img {
+  max-width: 90%;
+  border-radius: 8px;
+}
+.image p {
+  text-align: center;
+  opacity: 60%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
