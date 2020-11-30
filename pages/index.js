@@ -15,7 +15,7 @@ export default function Home() {
         <Main>
           <Menu />
 
-          <h1>Applied computer vision.</h1>
+          <h1>Applied computer vision</h1>
 
           <p className={generalStyles.warning}>
             [12/2020] Available for contracting or full time. Drop me a message at <a href="mailto:manlito@gmail.com">manlito@gmail.com</a>.
