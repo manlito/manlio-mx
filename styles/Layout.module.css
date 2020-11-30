@@ -59,3 +59,21 @@
     color: #7ac3e6;
   }
 }
+
+@media (max-width: 500px) {
+  .menu {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .menu {
+    font-size: 1.2rem;
+  }
+}
