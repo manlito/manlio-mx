@@ -98,6 +98,12 @@
   border-color: inherit;
 }
 
+.showcase:hover .go-button > button,
+.showcase:focus .go-button > button,
+.showcase:active .go-button > button {
+  background-color: #3781f1 !important;
+}
+
 @media (max-width: 600px) {
   .skills, .values {
     width: 100%;
