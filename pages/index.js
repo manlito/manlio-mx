@@ -36,6 +36,9 @@ export default function Home() {
               }}
               href="/projects/superpixel-mesh">
               <span><b>Superpixel Mesh</b> / Aligning a mesh to any image</span>
+              <div className={styles['go-button']}>
+                <button>Read and try</button>
+              </div>
             </a>
 
             <div>
