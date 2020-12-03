@@ -145,7 +145,7 @@ const SuperpixelMesh = () => {
 
             <p>So we know we want to find the 4 vertices coordinates for each superpixel. </p>
 
-            <p>A first attemt to solve would be to stand on giants shoulders and use something existing for superpixels, and after having superpixels identified, do some set of polygonal fits to find quadrilaterals. But using something existing, first it removes the fun, and second, that extra transform/optimization removes an opportunity to do things better. This is because the actual solution may be different when forcing the quadrilateral constraint for a superpixel.</p>
+            <p>A first attempt to solve would be to stand on giants shoulders and use something existing for superpixels, and after having superpixels identified, do some set of polygonal fits to find quadrilaterals. But using something existing, first it removes the fun, and second, that extra transform/optimization removes an opportunity to do things better. This is because the actual solution may be different when forcing the quadrilateral constraint for a superpixel.</p>
 
             <p>Instead, let's define the problem as an optimization problem. Why? Note first how superpixels are connected. Let's say you shift a vertex by some ammount. To improve the solution, we are likely to adjust the all the quadrilaterals that use that vertex, which will be 4. But if we adjust those neighbors, we may also need to update the neighbors of the neighbors, and so on.</p>
 
