@@ -17,9 +17,9 @@ export default function Home() {
 
           <h1>Applied computer vision</h1>
 
-          <p className={generalStyles.warning}>
-            [12/2020] Available for contracting or full time. Drop me a message at <a href="mailto:manlito@gmail.com">manlito@gmail.com</a>.
-          </p>
+          {/* <p className={generalStyles.warning}>
+            [4/2021] Available for contracting or full time. Drop me a message at <a href="mailto:manlito@gmail.com">manlito@gmail.com</a>.
+          </p> */}
 
           <section>
             <h2>
