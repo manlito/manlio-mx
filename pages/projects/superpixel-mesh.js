@@ -257,7 +257,7 @@ const SuperpixelMesh = () => {
             <p>As for the browser portion of this:</p>
 
             <ul>
-              <li><a href="https://webpack.js.org/loaders/worker-loader/" target="_blank">worker-loader</a>. WebPack loader to easily call web workers as modules.</li>
+              <li><s><a href="https://webpack.js.org/loaders/worker-loader/" target="_blank">worker-loader</a>. WebPack loader to easily call web workers as modules.</s> Starting Webpack 5, you can directly load workers using <a href="https://webpack.js.org/guides/web-workers/" target="_blank">web workers</a>.</li>
               <li><a href="https://webpack.js.org/loaders/file-loader/" target="_blank">file-loader</a>. Another loader to copy the WASM file to the output folder.</li>
             </ul>
 
