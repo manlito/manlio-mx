@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import generalStyles from '../../styles/General.module.css'
 import styles from '../../styles/SuperpixelMesh.module.css'
 import { useEffect, useState } from 'react'
@@ -8,7 +7,6 @@ import Menu from '../../components/Menu'
 import Footer from '../../components/Footer'
 import DropZone from '../../components/DropZone'
 import MeshCanvas from '../../components/projects/superpixel-mesh/MeshCanvas';
-import SuperpixelWorker from '../../components/projects/superpixel-mesh/SuperpixelMesh.worker.js';
 
 const SuperpixelMesh = () => {
   const [worker, setWorker] = useState(undefined);
@@ -27,7 +25,7 @@ const SuperpixelMesh = () => {
   });
 
   useEffect(() => {
-    setWorker(new SuperpixelWorker());
+    setWorker(new Worker(new URL('../../components/projects/superpixel-mesh/SuperpixelMesh.worker.js', import.meta.url)));
   }, []);
 
   useEffect(() => {
@@ -121,8 +119,8 @@ const SuperpixelMesh = () => {
 
             <div className={generalStyles.image} >
               <img src="/superpixel-mesh-cover.jpg" />
-              <p>Image of a plane with a possible segmentation <br /><small>(Image: 
-                
+              <p>Image of a plane with a possible segmentation <br /><small>(Image:
+
                 <span style={{fontSize: '0.9rem', fontStyle: 'italic'}}><a href="https://www.flickr.com/photos/45549579@N05/8276354739" target="_blank">"XA-VOC Volaris Airlines Airbus A319-132 C/N 2997 'Claudia'"</a><span> by <a target="_blank" href="https://www.flickr.com/photos/45549579@N05">TDelCoro</a></span> is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" style={{marginRight: '5px'}}>CC BY-SA 2.0</a></span>
 
                 </small></p>
@@ -229,7 +227,7 @@ const SuperpixelMesh = () => {
                 </form>
               </div>
               <button
-                disabled={isRunning} 
+                disabled={isRunning}
                 onClick={handleProcess} >
                 {!isRunning &&
                   <span>Run Superpixel Mesh</span>
