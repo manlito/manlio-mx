@@ -109,8 +109,6 @@
 }
 
 .timeline-entry {
-  display: flex;
-  gap: 1.5rem;
   padding: 1.25rem 0;
   border-bottom: 1px solid #eeeeee;
 }
@@ -119,19 +117,7 @@
   border-bottom: none;
 }
 
-.timeline-date {
-  flex-shrink: 0;
-  width: 120px;
-  font-size: 0.9rem;
-  color: #666666;
-  padding-top: 0.15rem;
-}
-
-.timeline-content {
-  flex-grow: 1;
-}
-
-.timeline-content h4 {
+.timeline-entry h4 {
   margin: 0 0 0.25rem 0;
 }
 
@@ -141,15 +127,6 @@
   margin: 0 0 0.5rem 0;
 }
 
-.timeline-content ul {
-  padding-left: 1.25rem;
-  margin: 0.5rem 0 0 0;
-}
-
-.timeline-content li {
-  margin-bottom: 0.35rem;
-}
-
 @media (max-width: 600px) {
   .skills, .values {
     width: 100%;
@@ -157,13 +134,6 @@
   }
   .skill > div {
     width: 100%;
-  }
-  .timeline-entry {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  .timeline-date {
-    width: auto;
   }
 }
 
@@ -180,9 +150,6 @@
   }
   .timeline-entry {
     border-bottom-color: #444444;
-  }
-  .timeline-date {
-    color: #aaaaaa;
   }
   .timeline-company {
     color: #999999;
