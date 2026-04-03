@@ -38,7 +38,7 @@ const StyledDropzone = (props) => {
     isDragAccept,
     isDragReject
   } = useDropzone({
-    accept: 'image/*',
+    accept: { 'image/*': [] },
     maxFiles: 1,
     onDrop: acceptedFiles => {
       if (acceptedFiles.length == 1) {
