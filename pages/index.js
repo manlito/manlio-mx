@@ -147,42 +147,51 @@ export default function Home() {
 
             <h3>What I have worked on</h3>
 
-            <div className={styles.timeline}>
+            <div className={styles.skills}>
 
-              <div className={styles['timeline-entry']}>
-                <h4>Senior Computer Vision Engineer</h4>
-                <p className={styles['timeline-company']}>Construction and insurance platform &middot; San Francisco, CA</p>
-                <p>Building and scaling the 3D reconstruction pipeline used by millions. My work covers bundle adjustment optimization for mobile AR captures, textured mesh generation for interior walkthroughs, and a WebAssembly-based system for CAD model refinement. I also led the development of a proprietary virtual experience that replaced a third-party vendor. 2 patents granted, 1 in process.</p>
+              <div className={styles.skill}>
+                <div>
+                  <h4>Construction and insurance platform</h4>
+                  <p><small>San Francisco, CA</small></p>
+                  <p>Scaled a 3D reconstruction pipeline now used for millions of reconstructions. Built textured meshes for interior walkthroughs, a virtual experience that replaced a third-party vendor, and a WebAssembly-based bundle adjustment tool for CAD refinement.</p>
+                  <p><small><b>Learned:</b> Shipping ML-heavy pipelines at scale, balancing accuracy with performance on mobile AR captures. Got 2 patents out of it.</small></p>
+                </div>
               </div>
 
-              <div className={styles['timeline-entry']}>
-                <h4>Senior Software Engineer</h4>
-                <p className={styles['timeline-company']}>Knee Replacement company &middot; Contract, Remote</p>
-                <p>Built a React-based CT segmentation editor for low-latency 3D visualization and a queue-based backend to scale the 3D reconstruction of tibia and femur models. Part of an FDA-approved surgical planning system.</p>
+              <div className={styles.skill}>
+                <div>
+                  <h4>Knee Replacement company</h4>
+                  <p><small>Contract, Remote</small></p>
+                  <p>Built a React CT segmentation editor for 3D visualization and a queue backend to run ML inference for reconstructing tibia and femur models. Part of an FDA-approved surgical planning system.</p>
+                  <p><small><b>Learned:</b> Working with medical imaging constraints and the rigor needed for FDA-grade software.</small></p>
+                </div>
               </div>
 
-              <div className={styles['timeline-entry']}>
-                <h4>Senior SLAM and Computer Vision Engineer</h4>
-                <p className={styles['timeline-company']}>Drone company &middot; Contract, Guadalajara, Mexico</p>
-                <p>Wrote a global optimizer with ceres-solver for LiDAR pose refinement in a multi-sensor SLAM system (LiDAR, RTK GNSS, IMU, camera). Also built a QT tool for verifying 3D capture accuracy.</p>
+              <div className={styles.skill}>
+                <div>
+                  <h4>Drone company</h4>
+                  <p><small>Guadalajara, Mexico</small></p>
+                  <p>Built a sub-5cm accurate photogrammetry pipeline from scratch and shipped it to edge devices on every continent. Fastest SfM solution for drone mapping in the market. Optimized for GPU on ARM (Jetson) and x86, processing billions of points in under 7Gb. Later returned as a contractor to work on multi-sensor SLAM (LiDAR, GNSS, IMU, camera).</p>
+                  <p><small><b>Learned:</b> Building a product from zero, leading a team, and squeezing performance out of constrained hardware. 3 patents.</small></p>
+                </div>
               </div>
 
-              <div className={styles['timeline-entry']}>
-                <h4>Senior Computer Vision Engineer</h4>
-                <p className={styles['timeline-company']}>Stealth startup &middot; Guadalajara, Mexico</p>
-                <p>Developed a React/Electron surgical planning app for a robotic system that communicated with a segmentation server to produce 3D representations from CT scans for implant placement.</p>
+              <div className={styles.skill}>
+                <div>
+                  <h4>Stealth startup</h4>
+                  <p><small>Guadalajara, Mexico</small></p>
+                  <p>Developed a React/Electron surgical planning app for a robotic system that produced 3D representations from CT scans for implant placement.</p>
+                  <p><small><b>Learned:</b> Bridging frontend UX with heavy 3D computation in a medical robotics context.</small></p>
+                </div>
               </div>
 
-              <div className={styles['timeline-entry']}>
-                <h4>Computer Vision Engineering Lead</h4>
-                <p className={styles['timeline-company']}>Drone company &middot; Guadalajara, Mexico</p>
-                <p>Built a sub-5cm accurate photogrammetry pipeline from the ground up and shipped it to edge devices on every continent. It remains the fastest photogrammetry solution for drone mapping in the market. Optimized for GPU on ARM (Nvidia Jetson) and x86, generating billions of points with less than 7Gb of memory. 3 patents granted.</p>
-              </div>
-
-              <div className={styles['timeline-entry']}>
-                <h4>PhD in Information Technologies and Communications</h4>
-                <p className={styles['timeline-company']}>Monterrey, Mexico</p>
-                <p>Visual tracking and 3D pose estimation for UAV navigation. Published 4 research articles including one at IROS. Research stay at University of Alberta, Canada on CAD-based 6DoF visual tracking.</p>
+              <div className={styles.skill}>
+                <div>
+                  <h4>PhD research</h4>
+                  <p><small>Monterrey, Mexico &amp; Edmonton, Canada</small></p>
+                  <p>Visual tracking and 3D pose estimation for UAV navigation. Published 4 research articles including one at IROS. Did a research stay at University of Alberta on CAD-based 6DoF visual tracking.</p>
+                  <p><small><b>Learned:</b> How to go deep on a problem. The fundamentals of geometry and optimization I use every day.</small></p>
+                </div>
               </div>
 
             </div>

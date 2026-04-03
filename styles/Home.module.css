@@ -104,28 +104,6 @@
   background-color: #3781f1 !important;
 }
 
-.timeline {
-  margin-top: 1rem;
-}
-
-.timeline-entry {
-  padding: 1.25rem 0;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.timeline-entry:last-child {
-  border-bottom: none;
-}
-
-.timeline-entry h4 {
-  margin: 0 0 0.25rem 0;
-}
-
-.timeline-company {
-  font-size: 0.9rem;
-  color: #888888;
-  margin: 0 0 0.5rem 0;
-}
 
 @media (max-width: 600px) {
   .skills, .values {
@@ -147,11 +125,5 @@
   }
   .hero img {
     filter: invert(80%)
-  }
-  .timeline-entry {
-    border-bottom-color: #444444;
-  }
-  .timeline-company {
-    color: #999999;
   }
 }
