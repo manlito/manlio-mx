@@ -19,6 +19,7 @@
   display: flex;
   flex-grow: 1;
   font-size: 2.5rem;
+  align-items: center;
 }
 .menu a {
   color: inherit !important;
@@ -26,6 +27,10 @@
 
 .name {
   flex-grow: 1;
+}
+.links {
+  display: flex;
+  align-items: center;
 }
 .name a {
   color: inherit;
