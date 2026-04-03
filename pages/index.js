@@ -49,19 +49,19 @@ export default function Home() {
 
             <p>{t(
               'Computer vision engineer working on 3D reconstruction with some fullstack dev skills. I have worked mostly for US startups solving challenges for which computer vision has a solution.',
-              'Ingeniero de visión computacional trabajando en reconstrucción 3D con habilidades de desarrollo fullstack. He trabajado principalmente para startups de EE.UU. resolviendo retos donde la visión computacional tiene una solución.'
+              'Ingeniero de visión computacional enfocado en reconstrucción 3D, con habilidades de desarrollo fullstack. He trabajado sobre todo para startups gringas resolviendo retos donde la visión computacional es la solución.'
             )}</p>
 
-            <h3>{t('My value proposition:', 'Mi propuesta de valor:')}</h3>
+            <h3>{t('My value proposition:', 'Lo que ofrezco:')}</h3>
 
             <div className={styles.values}>
 
               <div className={styles.value}>
                 <p>
-                  {t('Production grade code.', 'Código de calidad de producción.')}
+                  {t('Production grade code.', 'Código listo para producción.')}
                 &nbsp;<small>{t(
                   "You don't need to refactor everything upon completion. Research, code and productionize as it makes sense.",
-                  'No necesitas refactorizar todo al terminar. Investigar, programar y llevar a producción conforme tiene sentido.'
+                  'No tienes que refactorizar todo al final. Investigo, programo y llevo a producción conforme va teniendo sentido.'
                 )}</small>
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
                   {t('Computer vision + full stack.', 'Visión computacional + full stack.')}
                 &nbsp;<small>{t(
                   'If your project has the right time-to-market but some budget constraints at the same time, I can take on fullstack duties.',
-                  'Si tu proyecto tiene el time-to-market adecuado pero restricciones de presupuesto, puedo asumir tareas de fullstack.'
+                  'Si tu proyecto tiene buen time-to-market pero el presupuesto está apretado, sin problema me aviento también el fullstack.'
                 )}</small>
                 </p>
               </div>
@@ -81,17 +81,17 @@ export default function Home() {
                   {t('Culture and communication.', 'Cultura y comunicación.')}
                 &nbsp;<small>{t(
                   'I have worked for 6 years for US based companies. My main timezone is CST, yet it is flexible.',
-                  'He trabajado 6 años para empresas de EE.UU. Mi zona horaria principal es CST, aunque es flexible.'
+                  'Llevo 6 años trabajando con empresas gringas. Mi zona horaria es CST, pero soy flexible.'
                 )}</small>
                 </p>
               </div>
 
               <div className={styles.value}>
                 <p>
-                  {t('Complexity not a problem.', 'La complejidad no es problema.')}
+                  {t('Complexity not a problem.', 'La complejidad no me espanta.')}
                 &nbsp;<small>{t(
                   'I have architected and implemented year long projects smoothly. Comfortable coaching.',
-                  'He diseñado e implementado proyectos de un año sin problemas. Cómodo haciendo coaching.'
+                  'He diseñado e implementado proyectos de más de un año sin bronca. Me siento cómodo haciendo coaching.'
                 )}</small>
                 </p>
               </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <img src="deployment.svg" />
               <p>{t(
                 'Code I have written is running in production in the 5 continents',
-                'Código que he escrito está corriendo en producción en los 5 continentes'
+                'Código que escribí está corriendo en producción en los 5 continentes'
               )}</p>
             </div>
 
@@ -172,11 +172,11 @@ export default function Home() {
                   <p><small>San Francisco, CA</small></p>
                   <p>{t(
                     'Scaled a 3D reconstruction pipeline now used for millions of reconstructions. Built textured meshes for interior walkthroughs, a virtual experience that replaced a third-party vendor, and a WebAssembly-based bundle adjustment tool for CAD refinement.',
-                    'Escalé un pipeline de reconstrucción 3D ahora usado para millones de reconstrucciones. Construí mallas texturizadas para recorridos interiores, una experiencia virtual que reemplazó a un proveedor externo, y una herramienta de bundle adjustment basada en WebAssembly para refinamiento CAD.'
+                    'Escalé un pipeline de reconstrucción 3D que ahora se usa para millones de reconstrucciones. Armé mallas texturizadas para recorridos de interiores, una experiencia virtual que reemplazó a un proveedor externo, y una herramienta de bundle adjustment con WebAssembly para refinar CAD.'
                   )}</p>
-                  <p><small><b>{t('Learned:', 'Aprendí:')}</b> {t(
+                  <p><small><b>{t('Learned:', 'Lo que aprendí:')}</b> {t(
                     'Shipping ML-heavy pipelines at scale, balancing accuracy with performance on mobile AR captures. Got 2 patents out of it.',
-                    'Llevar pipelines pesados de ML a escala, balanceando precisión con rendimiento en capturas de AR móvil. Obtuve 2 patentes.'
+                    'Llevar pipelines pesados de ML a escala, balancear precisión con rendimiento en capturas de AR móvil. Saqué 2 patentes.'
                   )}</small></p>
                 </div>
               </div>
@@ -187,11 +187,11 @@ export default function Home() {
                   <p><small>{t('Contract, Remote', 'Contrato, Remoto')}</small></p>
                   <p>{t(
                     'Built a React CT segmentation editor for 3D visualization and a queue backend to run ML inference for reconstructing tibia and femur models. Part of an FDA-approved surgical planning system.',
-                    'Construí un editor de segmentación CT en React para visualización 3D y un backend de cola para ejecutar inferencia ML para reconstruir modelos de tibia y fémur. Parte de un sistema de planificación quirúrgica aprobado por la FDA.'
+                    'Hice un editor de segmentación CT en React para visualización 3D y un backend con cola para correr inferencia ML y reconstruir modelos de tibia y fémur. Parte de un sistema de planificación quirúrgica aprobado por la FDA.'
                   )}</p>
-                  <p><small><b>{t('Learned:', 'Aprendí:')}</b> {t(
+                  <p><small><b>{t('Learned:', 'Lo que aprendí:')}</b> {t(
                     'Working with medical imaging constraints and the rigor needed for FDA-grade software.',
-                    'Trabajar con las restricciones de imagen médica y el rigor necesario para software de grado FDA.'
+                    'A trabajar con las restricciones de imagen médica y el rigor que necesita el software grado FDA.'
                   )}</small></p>
                 </div>
               </div>
@@ -202,11 +202,11 @@ export default function Home() {
                   <p><small>Guadalajara, Mexico</small></p>
                   <p>{t(
                     'Built a sub-5cm accurate photogrammetry pipeline from scratch and shipped it to edge devices on every continent. Fastest SfM solution for drone mapping in the market. Optimized for GPU on ARM (Jetson) and x86, processing billions of points in under 7Gb. Later returned as a contractor to work on multi-sensor SLAM (LiDAR, GNSS, IMU, camera).',
-                    'Construí un pipeline de fotogrametría con precisión menor a 5cm desde cero y lo llevé a dispositivos edge en todos los continentes. La solución de SfM más rápida para mapeo con drones en el mercado. Optimizado para GPU en ARM (Jetson) y x86, procesando miles de millones de puntos en menos de 7Gb. Después regresé como contratista para trabajar en SLAM multi-sensor (LiDAR, GNSS, IMU, cámara).'
+                    'Armé un pipeline de fotogrametría con precisión menor a 5cm desde cero y lo llevé a dispositivos edge en todos los continentes. La solución de SfM más rápida para mapeo con drones en el mercado. Optimizado para GPU en ARM (Jetson) y x86, procesando miles de millones de puntos en menos de 7Gb. Después regresé como contratista a chambear en SLAM multi-sensor (LiDAR, GNSS, IMU, cámara).'
                   )}</p>
-                  <p><small><b>{t('Learned:', 'Aprendí:')}</b> {t(
+                  <p><small><b>{t('Learned:', 'Lo que aprendí:')}</b> {t(
                     'Building a product from zero, leading a team, and squeezing performance out of constrained hardware. 3 patents.',
-                    'Construir un producto desde cero, liderar un equipo y exprimir el rendimiento de hardware limitado. 3 patentes.'
+                    'A construir un producto desde cero, liderar un equipo y sacarle todo el jugo a hardware limitado. 3 patentes.'
                   )}</small></p>
                 </div>
               </div>
@@ -217,11 +217,11 @@ export default function Home() {
                   <p><small>Guadalajara, Mexico</small></p>
                   <p>{t(
                     'Developed a React/Electron surgical planning app for a robotic system that produced 3D representations from CT scans for implant placement.',
-                    'Desarrollé una aplicación de planificación quirúrgica en React/Electron para un sistema robótico que producía representaciones 3D a partir de tomografías para colocación de implantes.'
+                    'Desarrollé una app de planificación quirúrgica en React/Electron para un sistema robótico que generaba representaciones 3D a partir de tomografías para colocar implantes.'
                   )}</p>
-                  <p><small><b>{t('Learned:', 'Aprendí:')}</b> {t(
+                  <p><small><b>{t('Learned:', 'Lo que aprendí:')}</b> {t(
                     'Bridging frontend UX with heavy 3D computation in a medical robotics context.',
-                    'Conectar UX de frontend con cómputo 3D pesado en un contexto de robótica médica.'
+                    'A conectar UX de frontend con cómputo 3D pesado en un contexto de robótica médica.'
                   )}</small></p>
                 </div>
               </div>
@@ -232,11 +232,11 @@ export default function Home() {
                   <p><small>Monterrey, Mexico &amp; Edmonton, Canada</small></p>
                   <p>{t(
                     'Visual tracking and 3D pose estimation for UAV navigation. Published 4 research articles including one at IROS. Did a research stay at University of Alberta on CAD-based 6DoF visual tracking.',
-                    'Seguimiento visual y estimación de pose 3D para navegación de UAV. Publiqué 4 artículos de investigación incluyendo uno en IROS. Hice una estancia de investigación en la Universidad de Alberta sobre seguimiento visual 6DoF basado en CAD.'
+                    'Seguimiento visual y estimación de pose 3D para navegación de UAV. Publiqué 4 artículos de investigación, incluyendo uno en IROS. Hice una estancia en la Universidad de Alberta sobre seguimiento visual 6DoF basado en CAD.'
                   )}</p>
-                  <p><small><b>{t('Learned:', 'Aprendí:')}</b> {t(
+                  <p><small><b>{t('Learned:', 'Lo que aprendí:')}</b> {t(
                     'How to go deep on a problem. The fundamentals of geometry and optimization I use every day.',
-                    'Cómo profundizar en un problema. Los fundamentos de geometría y optimización que uso todos los días.'
+                    'A meterle a fondo a un problema. Los fundamentos de geometría y optimización que uso a diario.'
                   )}</small></p>
                 </div>
               </div>
