@@ -104,6 +104,7 @@
   background-color: #3781f1 !important;
 }
 
+
 @media (max-width: 600px) {
   .skills, .values {
     width: 100%;
@@ -123,6 +124,6 @@
     color: white;
   }
   .hero img {
-    filter: invert(80%) 
+    filter: invert(80%)
   }
 }
