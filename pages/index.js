@@ -89,51 +89,117 @@ export default function Home() {
               <p>Code I have written is running in production in the 5 continents</p>
             </div>
 
-            <h3>Experience</h3>
+            <h3>Skills</h3>
 
             <div className={styles.skills}>
 
               <div className={styles.skill}>
                 <div>
-                  <h4>Computer vision</h4>
+                  <h4>Classic Computer Vision</h4>
                   <ul>
-                    <li>Structure from motion</li>
-                    <li>SLAM using GPS, IMU, LiDAR and vision</li>
+                    <li>Structure from Motion</li>
+                    <li>Bundle adjustment</li>
+                    <li>Feature matching</li>
+                    <li>Intrinsics and rolling shutter model</li>
+                    <li>GPS and control point optimization</li>
+                    <li>SDF Fusion</li>
+                    <li>Sensor fusion</li>
+                    <li>Pointcloud registration, ICP</li>
                     <li>Multiview stereo</li>
-                    <li>Photogrammetry</li>
+                    <li>Color normalization</li>
                     <li>Surface reconstruction</li>
-                    <li>Pointcloud processing</li>
-                    <li>Calibration</li>
-                    <li>Spatial reference transforms (GIS)</li>
+                    <li>Texture mapping</li>
                   </ul>
                 </div>
               </div>
 
               <div className={styles.skill}>
                 <div>
-                  <h4>Computer vision libraries</h4>
+                  <h4>Machine Learning</h4>
                   <ul>
-                    <li>OpenCV, PointcloudLibray (PCL)</li>
-                    <li><span className="tag is-small">SfM</span> VLFeat, FLANN, OpenMVG</li>
-                    <li><span className="tag is-small">Multiview stereo</span> PMVS, SMVS</li>
-                    <li><span className="tag is-small">Computational geometry</span> PoissonRecon, CGAL</li>
-                    <li><span className="tag is-small">Math</span> Eigen, ceres-solver</li>
-                    <li><span className="tag is-small">Visualization</span> VTK</li>
-                    <li><span className="tag is-small">Parallelization</span> OpenMP, CUDA (beginner)</li>
+                    <li><span className="tag is-small">Frameworks</span> Pytorch, HuggingFace transformers, drjit</li>
+                    <li><span className="tag is-small">Networks</span> Transformers, Roomformer, SALAD, Metric3D, Oneformer, DinoV2, VGGT</li>
+                    <li><span className="tag is-small">VLM/LLM</span> Gemma3 (fine tuning)</li>
+                  </ul>
+                  <h4>Rendering &amp; Visualization</h4>
+                  <ul>
+                    <li><span className="tag is-small">Frameworks</span> mitsuba, pytorch3d</li>
+                    <li><span className="tag is-small">Methods</span> Gaussian splatting, inverse rendering, photometric optimization</li>
                   </ul>
                 </div>
               </div>
 
               <div className={styles.skill}>
                 <div>
-                  <h4>Software engineering</h4>
+                  <h4>Software Engineering</h4>
                   <ul>
-                    <li><span className="tag is-small">Languages</span> C++, Javascript, Python, Bash, C#, PHP</li>
-                    <li><span className="tag is-small">Cloud</span> (AWS): EC2, Lightsail, Elastic Beanstalk, S3, Lambda, API Gateway, Cloudfront, Route53. (GCP): AppEngine</li>
-                    <li><span className="tag is-small">Databases</span> MySQL, MS-SQL Server, MongoDB</li>
-                    <li><span className="tag is-small">Tools</span> Docker, CMake, Make, GTest, GPerfTools, Protobuf, emscripten</li>
-                    <li><span className="tag is-small">Frameworks</span> Qt, Node.JS, React, tensorflow (beginner)</li>
+                    <li><span className="tag is-small">Languages</span> C++, TS/JS, Python, Bash, Ruby, C#</li>
+                    <li><span className="tag is-small">Toolchain</span> CMake, GTest, pybind11, pytest</li>
+                    <li><span className="tag is-small">Web</span> React, SvelteKit, emscripten</li>
+                    <li><span className="tag is-small">Mobile</span> Android (classic and Compose)</li>
+                    <li><span className="tag is-small">Infra</span> AWS, GCP, Vercel, Neon, Github Actions</li>
+                    <li><span className="tag is-small">Evaluation</span> Pachyderm, ArgoWorkflows</li>
                   </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <h3>What I have worked on</h3>
+
+            <div className={styles.timeline}>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2021 &ndash; Present</div>
+                <div className={styles['timeline-content']}>
+                  <h4>Senior Computer Vision Engineer</h4>
+                  <p className={styles['timeline-company']}>Construction and insurance platform &middot; San Francisco, CA</p>
+                  <p>Building and scaling the 3D reconstruction pipeline used by millions. My work covers bundle adjustment optimization for mobile AR captures, textured mesh generation for interior walkthroughs, and a WebAssembly-based system for CAD model refinement. I also led the development of a proprietary virtual experience that replaced a third-party vendor. 2 patents granted, 1 in process.</p>
+                </div>
+              </div>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2022 &ndash; 2023</div>
+                <div className={styles['timeline-content']}>
+                  <h4>Senior Software Engineer</h4>
+                  <p className={styles['timeline-company']}>Knee Replacement company &middot; Contract, Remote</p>
+                  <p>Built a React-based CT segmentation editor for low-latency 3D visualization and a queue-based backend to scale the 3D reconstruction of tibia and femur models. Part of an FDA-approved surgical planning system.</p>
+                </div>
+              </div>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2020 &ndash; 2021</div>
+                <div className={styles['timeline-content']}>
+                  <h4>Senior SLAM and Computer Vision Engineer</h4>
+                  <p className={styles['timeline-company']}>Drone company &middot; Contract, Guadalajara, Mexico</p>
+                  <p>Wrote a global optimizer with ceres-solver for LiDAR pose refinement in a multi-sensor SLAM system (LiDAR, RTK GNSS, IMU, camera). Also built a QT tool for verifying 3D capture accuracy.</p>
+                </div>
+              </div>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2020</div>
+                <div className={styles['timeline-content']}>
+                  <h4>Senior Computer Vision Engineer</h4>
+                  <p className={styles['timeline-company']}>Stealth startup &middot; Guadalajara, Mexico</p>
+                  <p>Developed a React/Electron surgical planning app for a robotic system that communicated with a segmentation server to produce 3D representations from CT scans for implant placement.</p>
+                </div>
+              </div>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2015 &ndash; 2020</div>
+                <div className={styles['timeline-content']}>
+                  <h4>Computer Vision Engineering Lead</h4>
+                  <p className={styles['timeline-company']}>Drone company &middot; Guadalajara, Mexico</p>
+                  <p>Built a sub-5cm accurate photogrammetry pipeline from the ground up and shipped it to edge devices on every continent. It remains the fastest photogrammetry solution for drone mapping in the market. Optimized for GPU on ARM (Nvidia Jetson) and x86, generating billions of points with less than 7Gb of memory. 3 patents granted.</p>
+                </div>
+              </div>
+
+              <div className={styles['timeline-entry']}>
+                <div className={styles['timeline-date']}>2009 &ndash; 2014</div>
+                <div className={styles['timeline-content']}>
+                  <h4>PhD in Information Technologies and Communications</h4>
+                  <p className={styles['timeline-company']}>Monterrey, Mexico</p>
+                  <p>Visual tracking and 3D pose estimation for UAV navigation. Published 4 research articles including one at IROS. Research stay at University of Alberta, Canada on CAD-based 6DoF visual tracking.</p>
                 </div>
               </div>
 
